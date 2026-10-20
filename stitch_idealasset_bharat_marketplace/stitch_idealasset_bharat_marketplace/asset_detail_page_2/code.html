@@ -1,0 +1,189 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#8b7265", "inverse-surface": "#31302e", "primary-container": "#f47920", "surface-dim": "#dcdad6", "surface-container-low": "#f6f3ef", "on-tertiary-fixed": "#002201", "on-error-container": "#93000a", "primary-fixed": "#ffdbc9", "on-background": "#1c1c1a", "on-primary-container": "#572400", "secondary-container": "#81b9ff", "on-secondary-container": "#004980", "secondary-fixed-dim": "#a1c9ff", "on-primary-fixed-variant": "#763300", "tertiary-container": "#5bae4f", "error": "#ba1a1a", "on-primary-fixed": "#321200", "surface-container-highest": "#e5e2de", "on-primary": "#ffffff", "surface-tint": "#9a4600", "surface-variant": "#e5e2de", "secondary-fixed": "#d2e4ff", "on-tertiary": "#ffffff", "tertiary-fixed": "#a0f88e", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-surface": "#1c1c1a", "on-tertiary-fixed-variant": "#005304", "on-secondary-fixed-variant": "#004880", "on-secondary": "#ffffff", "tertiary": "#186d15", "inverse-on-surface": "#f3f0ec", "on-secondary-fixed": "#001c37", "primary-fixed-dim": "#ffb68d", "on-surface-variant": "#574237", "on-tertiary-container": "#003d02", "outline-variant": "#dec0b1", "surface-container": "#f0edea", "background": "#fcf9f5", "surface": "#fcf9f5", "surface-bright": "#fcf9f5", "primary": "#9a4600", "tertiary-fixed-dim": "#85db75", "surface-container-high": "#ebe8e4", "inverse-primary": "#ffb68d", "error-container": "#ffdad6", "secondary": "#1961a1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "16px", "margin-desktop": "40px", "stack-md": "16px", "stack-sm": "8px", "unit": "8px", "gutter": "24px", "stack-lg": "32px", "container-max-width": "1280px" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }</style></head><body class="bg-surface text-on-surface font-body-md"><header class="fixed top-0 w-full z-50 bg-[#0A2A6B] pt-safe shadow-[0_4px_20px_rgba(10,42,107,0.1)]"><div class="h-16 px-margin-mobile flex items-center gap-stack-md"><button class="w-10 h-10 flex items-center justify-center text-white bg-white/10 rounded-full" onclick="history.back()"><span class="material-symbols-outlined">arrow_back</span></button><h1 class="text-headline-sm font-headline-sm text-white truncate">Asset Details</h1><div class="ml-auto flex items-center gap-stack-md"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-white/20"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div></div></div></header><main class="pt-16 min-h-screen bg-surface pb-safe"><div class="flex flex-col w-full pb-[100px]">
+<!-- Image Carousel Area -->
+<div class="relative w-full aspect-[4/3] bg-surface-container-high rounded-b-xl overflow-hidden shadow-sm shrink-0">
+<!-- Carousel Images Container -->
+<div class="flex w-full h-full overflow-x-auto snap-x snap-mandatory hide-scrollbar scroll-smooth" id="imageCarousel">
+<div class="w-full h-full shrink-0 snap-center bg-cover bg-center" data-alt="A bright, modern multi-purpose community hall with polished wooden floors, high ceilings, and large windows letting in natural sunlight. Clean, corporate yet welcoming atmosphere, featuring a subtle color palette of white, light gray, with soft green and orange accents in the decor." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8PxgbY7lGhqliauWQVOWiNBm6p0DgEGukDX3wb0juqmYiATWj06AsJsABbJs1ti6DatD4XbBAEdG1vLgsLJtnf1ZiAGw2OFaWVHFZKMgiGt0rW87pkxDl4QkZrdVWYW9qXvn-HeEfSdEuHAC37RvebJs0p4RmW9DeSQxuTqD8zJpNkXlpBWvF957C8eYZgIFDVxrrmxFlj2aEqGMokoTLOquU9YgTQRogxpNyRTXk7UpcnEWBomDg')"></div>
+<div class="w-full h-full shrink-0 snap-center bg-cover bg-center" data-alt="A wide shot of the community hall setup for a presentation, showing rows of neatly arranged modern white chairs facing a small wooden stage with an AV screen setup. The room feels spacious and well-lit." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDm61n0QXkI1SwoV1eQ3OrcNhWs4qvisCDSWGcdFzTuSrIp3UDqyWNhmj53DJIjdbORGuQIG-SyMYHGr0Xl8rvDlgqDwjrECEftOCgl-ivSa6_RADK6Jd7gQb4FkONVBQNZwbyn-74_V0TnZTcwxvoYi-ZISqfQdDOyUE0F71khkzdNoY1-ZqDA5oqrzaSKf4VM6f9-HzXLx8jDuyESqeP-91o3OpoFEoXNWzOP4CQi07ORyK-JfGDz')"></div>
+<div class="w-full h-full shrink-0 snap-center bg-cover bg-center" data-alt="A close-up showing the modern AV equipment and projector setup in the community hall, highlighting the technological readiness of the space. Clean, professional look." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAD9HrPY6YTpbcx9fuBnirJ3JDyZLy-zWXCt0CfwOsufoJ5DG5_RyNw5Ndypqbu72t5bTdCWyauqiO7NMY4a2B_m-hC8QbrqvKL7Q0qZq_RTHqe1dcVwoC9hFY4uPIIcfG-63YKzAd2g9iPIb60v8TQrC6ZiGqdS0O8WShIfrtYDuZXBEFFHQMfjpn7JVdh1ke35mYO_IBDv9CVgOqSr8Og4nGWAHprOsg-Y3OR703Jc6HZElAp2RoF')"></div>
+</div>
+<!-- Badges overlay -->
+<div class="absolute top-margin-mobile left-margin-mobile flex gap-stack-sm z-10">
+<div class="bg-tertiary-container/90 text-on-tertiary-container backdrop-blur px-3 py-1 rounded-full text-label-md font-label-md shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+        Available Now
+      </div>
+</div>
+<div class="absolute top-margin-mobile right-margin-mobile z-10 flex gap-stack-sm">
+<button class="w-10 h-10 bg-surface/90 text-on-surface backdrop-blur rounded-full flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="w-10 h-10 bg-surface/90 text-on-surface backdrop-blur rounded-full flex items-center justify-center shadow-sm active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+<!-- Carousel Indicators -->
+<div class="absolute bottom-margin-mobile left-1/2 -translate-x-1/2 flex gap-2 z-10 bg-surface/50 backdrop-blur px-3 py-1.5 rounded-full">
+<div class="w-2 h-2 rounded-full bg-primary shadow-sm transition-all duration-300" id="indicator-0"></div>
+<div class="w-2 h-2 rounded-full bg-surface-variant shadow-sm transition-all duration-300" id="indicator-1"></div>
+<div class="w-2 h-2 rounded-full bg-surface-variant shadow-sm transition-all duration-300" id="indicator-2"></div>
+</div>
+</div>
+<!-- Content Body -->
+<div class="flex flex-col px-margin-mobile pt-stack-md gap-stack-lg">
+<!-- Title & Basic Info -->
+<div class="flex flex-col gap-stack-sm">
+<div class="flex items-start justify-between gap-4">
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface">Civic Center Multi-Purpose Hall B</h2>
+<div class="flex flex-col items-end">
+<span class="text-headline-sm font-headline-sm text-primary">₹2,500</span>
+<span class="text-label-md font-label-md text-on-surface-variant">/ day</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">location_on</span>
+<span>Sector 14, Municipal Ward 4</span>
+</div>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-1 rounded-full text-label-md font-label-md">Capacity: 150</span>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-1 rounded-full text-label-md font-label-md">AC Included</span>
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-1 rounded-full text-label-md font-label-md">AV Setup</span>
+</div>
+</div>
+<!-- Owner / Manager Block -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm flex items-center gap-4">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="text-label-md font-label-md text-on-surface-variant">Managed by</span>
+<span class="text-body-md font-body-md text-on-surface truncate font-semibold">Municipal Corporation Central</span>
+</div>
+<button class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">chat</span>
+</button>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-stack-sm">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">About this asset</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+        A versatile, fully air-conditioned hall suitable for community gatherings, small exhibitions, training sessions, and corporate meetings. Equipped with standard AV facilities, a small raised platform, and adjoining restroom facilities. Wheelchair accessible.
+      </p>
+<button class="text-primary text-body-sm font-body-sm font-semibold flex items-center gap-1 self-start mt-1">
+        Read more <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Location Map -->
+<div class="flex flex-col gap-stack-sm">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Location</h3>
+<div class="w-full h-40 bg-surface-container-high rounded-xl overflow-hidden shadow-sm relative">
+<div class="w-full h-full bg-cover bg-center" data-location="Sector 14, Municipal Ward 4" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9FHewDyntXals9axrEEYFcrmB101H90EfTC59ZThgH4_JauCugEiePc5xwmlEujuW6KqS-nkesfXpPFeHH6Nv8fzHobc4amXo5Lv1FskuWWjZmSHWwkvfGsay4OLgyMKls2HPCIho7zRo-sw8Pf1I1mxxV2a3yIP3Fi5ODvxMJQMfsXwiJlAGlD2EheVyhzYvhjd2zR1vxKTxRh2PbfS-x894XRWhh8A4C314PcVpJgtQuJhL5RWy')"></div>
+<div class="absolute bottom-2 right-2 bg-surface/90 backdrop-blur rounded px-2 py-1 text-label-md font-label-md shadow-sm text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">directions</span> Get Directions
+        </div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">1.2 km from City Center Metro Station</p>
+</div>
+<!-- Availability Calendar -->
+<div class="flex flex-col gap-stack-sm">
+<div class="flex items-center justify-between">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Availability</h3>
+<div class="flex items-center gap-1 bg-surface-container-high px-3 py-1.5 rounded-full text-label-md font-label-md text-on-surface">
+<span>October 2023</span>
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+</div>
+</div>
+<!-- Simple Calendar Vis -->
+<div class="bg-surface-container rounded-xl p-4 shadow-sm mt-2">
+<div class="grid grid-cols-7 gap-1 text-center mb-2">
+<div class="text-label-md font-label-md text-on-surface-variant">S</div>
+<div class="text-label-md font-label-md text-on-surface-variant">M</div>
+<div class="text-label-md font-label-md text-on-surface-variant">T</div>
+<div class="text-label-md font-label-md text-on-surface-variant">W</div>
+<div class="text-label-md font-label-md text-on-surface-variant">T</div>
+<div class="text-label-md font-label-md text-on-surface-variant">F</div>
+<div class="text-label-md font-label-md text-on-surface-variant">S</div>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center">
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface-variant opacity-50">1</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface-variant opacity-50">2</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface-variant opacity-50">3</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface-variant opacity-50">4</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface bg-surface-container-highest rounded-full">5</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface bg-surface-container-highest rounded-full">6</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface bg-surface-container-highest rounded-full">7</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface bg-surface-container-highest rounded-full">8</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface bg-surface-container-highest rounded-full">9</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface bg-surface-container-highest rounded-full">10</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-primary bg-primary rounded-full shadow-sm font-semibold">11</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-primary bg-primary rounded-full shadow-sm font-semibold">12</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface-variant bg-surface-variant rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_4px,rgba(0,0,0,0.05)_4px,rgba(0,0,0,0.05)_8px)]"></div>
+<span class="relative z-10 line-through">13</span>
+</div>
+<div class="aspect-square flex items-center justify-center text-body-sm font-body-sm text-on-surface-variant bg-surface-variant rounded-full relative overflow-hidden">
+<div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_4px,rgba(0,0,0,0.05)_4px,rgba(0,0,0,0.05)_8px)]"></div>
+<span class="relative z-10 line-through">14</span>
+</div>
+</div>
+<div class="flex items-center justify-center gap-4 mt-4 text-label-md font-label-md">
+<div class="flex items-center gap-1 text-on-surface-variant"><div class="w-3 h-3 rounded-full bg-surface-container-highest"></div> Available</div>
+<div class="flex items-center gap-1 text-on-surface-variant"><div class="w-3 h-3 rounded-full bg-primary"></div> Selected</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<div class="w-3 h-3 rounded-full bg-surface-variant relative overflow-hidden">
+<div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_2px,rgba(0,0,0,0.1)_2px,rgba(0,0,0,0.1)_4px)]"></div>
+</div> Booked
+           </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom CTA Bar Fixed -->
+<div class="fixed bottom-0 left-0 w-full bg-surface shadow-[0_-4px_20px_rgba(0,0,0,0.05)] pb-safe z-40">
+<div class="flex items-center justify-between p-margin-mobile gap-4">
+<div class="flex flex-col min-w-0">
+<span class="text-body-sm font-body-sm text-on-surface-variant">Total (2 Days)</span>
+<span class="text-headline-sm font-headline-sm text-on-surface font-semibold truncate">₹5,000</span>
+</div>
+<button class="flex-1 bg-primary text-on-primary h-12 rounded-lg text-body-md font-body-md font-semibold flex items-center justify-center shadow-sm active:bg-surface-tint transition-colors">
+        Request Booking
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Simple carousel indicator sync
+  const carousel = document.getElementById('imageCarousel');
+  const indicators = [
+    document.getElementById('indicator-0'),
+    document.getElementById('indicator-1'),
+    document.getElementById('indicator-2')
+  ];
+
+  if(carousel) {
+    carousel.addEventListener('scroll', () => {
+      const scrollRatio = carousel.scrollLeft / carousel.scrollWidth;
+      const activeIndex = Math.round(scrollRatio * indicators.length);
+      
+      indicators.forEach((indicator, index) => {
+        if(index === activeIndex) {
+          indicator.classList.remove('bg-surface-variant');
+          indicator.classList.add('bg-primary');
+        } else {
+          indicator.classList.remove('bg-primary');
+          indicator.classList.add('bg-surface-variant');
+        }
+      });
+    });
+  }
+</script>
+<style>
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style></main></body></html>

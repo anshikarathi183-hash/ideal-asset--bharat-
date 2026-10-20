@@ -1,0 +1,126 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#005322", "outline-variant": "#e0c0b0", "secondary-fixed": "#9df6ab", "primary-fixed-dim": "#ffb68e", "secondary": "#0a6d31", "tertiary": "#435c9e", "tertiary-fixed-dim": "#b3c5ff", "surface-dim": "#cedbef", "inverse-surface": "#253140", "on-background": "#0f1c2a", "surface-container-low": "#eef4ff", "inverse-primary": "#ffb68e", "primary-fixed": "#ffdbc9", "secondary-container": "#9af4a8", "on-secondary-container": "#137235", "primary-container": "#f97302", "on-error": "#ffffff", "inverse-on-surface": "#e9f1ff", "surface-bright": "#f8f9ff", "on-primary": "#ffffff", "primary": "#9b4500", "background": "#f8f9ff", "on-primary-container": "#562300", "surface": "#f8f9ff", "on-surface-variant": "#584236", "outline": "#8c7164", "on-primary-fixed-variant": "#763300", "on-error-container": "#93000a", "on-surface": "#0f1c2a", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "surface-container-high": "#dce9fd", "tertiary-fixed": "#dbe1ff", "tertiary-container": "#8098df", "surface-tint": "#9b4500", "on-tertiary-container": "#102e6f", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#2a4385", "on-primary-fixed": "#331200", "surface-container-highest": "#d6e4f7", "error": "#ba1a1a", "on-secondary-fixed": "#00210a", "on-tertiary": "#ffffff", "surface-variant": "#d6e4f7", "surface-container": "#e4efff", "secondary-fixed-dim": "#82da91", "on-tertiary-fixed": "#00184a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "base": "8px", "xs": "4px", "gutter": "16px", "md": "16px", "lg": "24px", "xl": "32px", "sm": "12px", "container-margin": "20px" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md"><header class="fixed top-0 w-full z-50 bg-[#0A2A6B] pt-safe shadow-[0_4px_20px_rgba(10,42,107,0.1)]"><div class="h-16 px-container-margin flex items-center justify-between gap-md"><div class="flex items-center gap-xs text-white font-headline-md text-headline-md italic tracking-tighter">iA<span class="text-primary-container font-bold">B</span></div><div class="flex-1 flex justify-center items-center gap-xs px-md py-xs bg-white/10 rounded-full text-white/90 max-w-[200px]"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="text-label-md font-label-md truncate">Select Location</span></div><div class="flex items-center gap-md"><div class="w-8 h-8 flex items-center justify-center text-white relative"><span class="material-symbols-outlined">notifications</span><div class="absolute top-1 right-1 w-2 h-2 bg-primary-container rounded-full"></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border border-white/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full relative h-full">
+<!-- Sticky Search & Filter Header -->
+<div class="sticky top-16 z-40 bg-surface/90 backdrop-blur-md px-container-margin py-sm shadow-sm flex flex-col gap-sm">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-xl pr-sm py-sm rounded-full bg-surface-container text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="What do you need?" type="text" value="Generators"/>
+<button class="absolute right-xs top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-primary-container text-on-primary rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Filter Chips -->
+<div class="flex overflow-x-auto gap-xs pb-xs no-scrollbar">
+<button class="flex-shrink-0 flex items-center gap-xs px-sm py-xs rounded-full bg-primary-container/10 text-primary-container text-label-md font-label-md">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+        Filters (2)
+      </button>
+<button class="flex-shrink-0 flex items-center gap-xs px-sm py-xs rounded-full bg-surface-container text-on-surface-variant text-label-md font-label-md">
+        Price
+        <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-xs px-sm py-xs rounded-full bg-surface-container text-on-surface-variant text-label-md font-label-md">
+        Distance &lt; 5mi
+        <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-xs px-sm py-xs rounded-full bg-surface-container text-on-surface-variant text-label-md font-label-md">
+        Category
+        <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="flex-shrink-0 flex items-center gap-xs px-sm py-xs rounded-full bg-surface-container text-on-surface-variant text-label-md font-label-md">
+        Date/Time
+        <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Map/List Toggle (Floating) -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-40 bg-inverse-surface text-inverse-on-surface rounded-full px-xs py-xs flex items-center shadow-xl">
+<button class="px-md py-xs rounded-full bg-on-surface text-surface text-label-md font-label-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span> List
+    </button>
+<button class="px-md py-xs rounded-full text-inverse-on-surface text-label-md font-label-md flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">map</span> Map
+    </button>
+</div>
+<!-- Content Area (Empty State - demonstrating character) -->
+<div class="flex-1 px-container-margin py-md flex flex-col items-center justify-center min-h-[530px] text-center" id="empty-state">
+<div class="w-48 h-48 mb-md relative">
+<svg class="w-full h-full text-surface-container-highest absolute inset-0 animate-pulse" viewbox="0 0 200 200">
+<circle cx="100" cy="100" fill="currentColor" opacity="0.5" r="80"></circle>
+<circle cx="100" cy="100" fill="currentColor" opacity="0.8" r="50"></circle>
+</svg>
+<span class="material-symbols-outlined absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-tertiary text-[64px]">search_off</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface mb-xs">No assets found nearby</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-lg max-w-[280px]">
+      Looks like everyone's holding onto their generators right now. Try widening your search radius to find more options.
+    </p>
+<button class="px-lg py-sm rounded-full bg-primary-container text-on-primary text-label-md font-label-md shadow-md flex items-center gap-xs active:scale-95 transition-transform" onclick="document.getElementById('empty-state').style.display='none'; document.getElementById('results').style.display='flex';">
+<span class="material-symbols-outlined text-[18px]">radar</span> Widen Radius to 10mi
+    </button>
+</div>
+<!-- Results Grid (Hidden initially for demo) -->
+<div class="flex-1 px-container-margin py-md flex flex-col gap-md" id="results" style="display: none;">
+<!-- Result Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(10,42,107,0.05)] overflow-hidden flex flex-col group relative">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A clean, modern portable Honda generator sitting on a well-kept suburban driveway. Bright sunny day, professional lighting, conveying reliability and readiness. Institutional yet approachable aesthetic, Corporate Modern style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0TN6rcINyhQkzK_1FTUkr2lpzFocP_fViYF-Ok74B05O-YWRJOPuPdV_WQll_KdfAyzJu5dDG7c7IK_U6JIVr8EzwZuefHq4GFVsK4ddyDqFbxLGT5mzTLQ1bQG_QrpW2UXwqmx81FLvAeStMdyjU0r5w-2BtP50eE6EDfHVByA9z8BuGnawpmNi9cod7XYh9p1Tr_LjMwtBUzuRTequnn9c3E0R665HOrGB4xlhfhevJ2LqmRhTf"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 backdrop-blur-sm px-xs py-xs rounded-full flex items-center gap-xs text-on-surface text-label-md font-label-md shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+        </div>
+</div>
+<div class="p-md flex flex-col gap-xs">
+<div class="flex justify-between items-start gap-sm">
+<h3 class="text-body-lg font-headline-md text-on-surface truncate">Honda EU2200i Generator</h3>
+<div class="text-body-lg font-headline-md text-primary-container whitespace-nowrap">$45<span class="text-label-md font-label-md text-on-surface-variant font-normal">/day</span></div>
+</div>
+<div class="flex items-center gap-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>1.2 mi away • Downtown District</span>
+</div>
+<div class="mt-xs flex items-center justify-between">
+<div class="flex items-center gap-xs bg-secondary-container/50 px-sm py-xs rounded-full">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="text-label-md font-label-md text-on-secondary-container">Available Now</span>
+</div>
+<div class="flex items-center gap-xs text-secondary text-label-md font-label-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span> Verified Owner
+          </div>
+</div>
+</div>
+</div>
+<!-- Result Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-[0_4px_20px_rgba(10,42,107,0.05)] overflow-hidden flex flex-col group relative">
+<div class="h-40 w-full relative">
+<img class="w-full h-full object-cover" data-alt="A heavy-duty yellow construction generator on a small trailer. Parked near a residential garage. Slightly overcast soft lighting, emphasizing rugged durability and community utility. Tactile Friendly style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB5SmkY5pUMRvOfxxxeCdexO6doliWl3NTW0PC7W1w9Uteohbx64N2DWiQMOY-WsfRM4bmFj2yV6bGNsq2gbF5oXfuOzL8I0OKfrIvcGC2poZlPrznirCXDt-UG5_ALSiuu1OUNL-vdlx6ijc7BBx-nRbAoDneIC83Ctri3iawdcm6Uz5it2f5TooY9uHItM44tJnQJMVWim0PxSVykdD9deXJhUq0zyJdJT_SN4CxSAjBdx8-aMrM"/>
+<div class="absolute top-sm right-sm bg-surface-container-lowest/90 backdrop-blur-sm px-xs py-xs rounded-full flex items-center gap-xs text-on-surface text-label-md font-label-md shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span> 4.7
+        </div>
+</div>
+<div class="p-md flex flex-col gap-xs">
+<div class="flex justify-between items-start gap-sm">
+<h3 class="text-body-lg font-headline-md text-on-surface truncate">Champion 3500W Portable</h3>
+<div class="text-body-lg font-headline-md text-primary-container whitespace-nowrap">$35<span class="text-label-md font-label-md text-on-surface-variant font-normal">/day</span></div>
+</div>
+<div class="flex items-center gap-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>3.5 mi away • Northside</span>
+</div>
+<div class="mt-xs flex items-center justify-between">
+<div class="flex items-center gap-xs bg-primary-fixed/50 px-sm py-xs rounded-full">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-label-md font-label-md text-on-primary-fixed">Available Tomorrow</span>
+</div>
+<div class="flex items-center gap-xs text-secondary text-label-md font-label-md">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span> Verified Owner
+          </div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="h-24"></div></main><nav class="fixed bottom-0 w-full z-50 bg-white/80 backdrop-blur-xl pb-safe shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="text-label-md font-label-md">Home</span></a><a aria-current="page" class="flex flex-col items-center gap-xs transition-colors text-primary-container" data-path="explore" href="#"><span class="material-symbols-outlined">explore</span><span class="text-label-md font-label-md">Explore</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="bookings" href="#"><span class="material-symbols-outlined">calendar_today</span><span class="text-label-md font-label-md">Bookings</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined">chat_bubble</span><span class="text-label-md font-label-md">Messages</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined">account_circle</span><span class="text-label-md font-label-md">Profile</span></a></div></nav></body></html>

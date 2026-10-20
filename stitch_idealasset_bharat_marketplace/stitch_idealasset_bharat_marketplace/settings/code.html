@@ -1,0 +1,142 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#005322", "outline-variant": "#e0c0b0", "secondary-fixed": "#9df6ab", "primary-fixed-dim": "#ffb68e", "secondary": "#0a6d31", "tertiary": "#435c9e", "tertiary-fixed-dim": "#b3c5ff", "surface-dim": "#cedbef", "inverse-surface": "#253140", "on-background": "#0f1c2a", "surface-container-low": "#eef4ff", "inverse-primary": "#ffb68e", "primary-fixed": "#ffdbc9", "secondary-container": "#9af4a8", "on-secondary-container": "#137235", "primary-container": "#f97302", "on-error": "#ffffff", "inverse-on-surface": "#e9f1ff", "surface-bright": "#f8f9ff", "on-primary": "#ffffff", "primary": "#9b4500", "background": "#f8f9ff", "on-primary-container": "#562300", "surface": "#f8f9ff", "on-surface-variant": "#584236", "outline": "#8c7164", "on-primary-fixed-variant": "#763300", "on-error-container": "#93000a", "on-surface": "#0f1c2a", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "surface-container-high": "#dce9fd", "tertiary-fixed": "#dbe1ff", "tertiary-container": "#8098df", "surface-tint": "#9b4500", "on-tertiary-container": "#102e6f", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#2a4385", "on-primary-fixed": "#331200", "surface-container-highest": "#d6e4f7", "error": "#ba1a1a", "on-secondary-fixed": "#00210a", "on-tertiary": "#ffffff", "surface-variant": "#d6e4f7", "surface-container": "#e4efff", "secondary-fixed-dim": "#82da91", "on-tertiary-fixed": "#00184a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "base": "8px", "xs": "4px", "gutter": "16px", "md": "16px", "lg": "24px", "xl": "32px", "sm": "12px", "container-margin": "20px" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }</style></head><body class="bg-surface text-on-surface font-body-md"><header class="fixed top-0 w-full z-50 bg-[#0A2A6B] pt-safe shadow-[0_4px_20px_rgba(10,42,107,0.1)]"><div class="h-16 px-container-margin flex items-center justify-between gap-md"><div class="flex items-center gap-xs text-white font-headline-md text-headline-md italic tracking-tighter">iA<span class="text-primary-container font-bold">B</span></div><div class="flex-1 flex justify-center items-center gap-xs px-md py-xs bg-white/10 rounded-full text-white/90 max-w-[200px]"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="text-label-md font-label-md truncate">Select Location</span></div><div class="flex items-center gap-md"><div class="w-8 h-8 flex items-center justify-center text-white relative"><span class="material-symbols-outlined">notifications</span><div class="absolute top-1 right-1 w-2 h-2 bg-primary-container rounded-full"></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border border-white/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Header Area -->
+<div class="px-container-margin py-xl flex flex-col gap-xs">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Settings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Manage your preferences, account details, and sharing options.</p>
+</div>
+<!-- Location & Discovery Preferences -->
+<section class="px-container-margin mb-xl flex flex-col gap-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Discovery &amp; Location</h2>
+<div class="bg-surface-container-low rounded-xl p-md shadow-[0_4px_20px_rgba(10,42,107,0.05)] flex flex-col gap-md">
+<!-- Default Location -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Default Location</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate w-48">Downtown Community Hub</p>
+</div>
+</div>
+<button class="text-primary font-label-md text-label-md">Edit</button>
+</div>
+<hr class="border-t border-outline-variant/30"/>
+<!-- Discovery Radius -->
+<div class="flex flex-col gap-sm">
+<div class="flex items-center justify-between">
+<p class="font-label-md text-label-md text-on-surface">Search Radius</p>
+<p class="font-body-sm text-body-sm text-primary font-semibold"><span id="radius-val">15</span> km</p>
+</div>
+<input class="w-full h-2 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-primary" id="radius-slider" max="50" min="1" type="range" value="15"/>
+<div class="flex justify-between font-label-md text-xs text-on-surface-variant">
+<span>1 km</span>
+<span>50 km</span>
+</div>
+</div>
+</div>
+</section>
+<!-- App Preferences -->
+<section class="px-container-margin mb-xl flex flex-col gap-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">App Preferences</h2>
+<div class="bg-surface-container-low rounded-xl shadow-[0_4px_20px_rgba(10,42,107,0.05)] flex flex-col">
+<!-- Notifications -->
+<div class="p-md flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Push Notifications</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Updates, messages &amp; alerts</p>
+</div>
+</div>
+<!-- Toggle -->
+<button aria-checked="true" class="w-12 h-6 bg-primary rounded-full relative transition-colors duration-300 flex items-center px-1" onclick="this.setAttribute('aria-checked', this.getAttribute('aria-checked') === 'true' ? 'false' : 'true'); this.classList.toggle('bg-primary'); this.classList.toggle('bg-surface-variant'); this.querySelector('div').classList.toggle('translate-x-6');" role="switch">
+<div class="w-4 h-4 bg-white rounded-full shadow-sm transform transition-transform duration-300 translate-x-6"></div>
+</button>
+</div>
+<hr class="border-t border-outline-variant/30 mx-md"/>
+<!-- Dark Mode -->
+<div class="p-md flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">dark_mode</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Dark Theme</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Match system settings</p>
+</div>
+</div>
+<!-- Toggle -->
+<button aria-checked="false" class="w-12 h-6 bg-surface-variant rounded-full relative transition-colors duration-300 flex items-center px-1" onclick="this.setAttribute('aria-checked', this.getAttribute('aria-checked') === 'true' ? 'false' : 'true'); this.classList.toggle('bg-primary'); this.classList.toggle('bg-surface-variant'); this.querySelector('div').classList.toggle('translate-x-6');" role="switch">
+<div class="w-4 h-4 bg-white rounded-full shadow-sm transform transition-transform duration-300"></div>
+</button>
+</div>
+<hr class="border-t border-outline-variant/30 mx-md"/>
+<!-- Language -->
+<div class="p-md flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">language</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Language</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">English (US)</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Account & Security -->
+<section class="px-container-margin mb-xl flex flex-col gap-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Account &amp; Security</h2>
+<div class="bg-surface-container-low rounded-xl shadow-[0_4px_20px_rgba(10,42,107,0.05)] flex flex-col">
+<!-- Linked Accounts -->
+<div class="p-md flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">link</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Linked Accounts</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Google, Apple</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</div>
+<hr class="border-t border-outline-variant/30 mx-md"/>
+<!-- Privacy Settings -->
+<div class="p-md flex items-center justify-between">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">shield_person</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Privacy Settings</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Data sharing &amp; visibility</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Sign Out Button -->
+<div class="px-container-margin mt-md">
+<button class="w-full py-sm bg-error-container text-on-error-container rounded-lg font-label-md text-label-md flex items-center justify-center gap-xs shadow-[0_4px_20px_rgba(186,26,26,0.1)] active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+            Sign Out
+        </button>
+<p class="text-center mt-md font-body-sm text-body-sm text-on-surface-variant opacity-60">Version 2.4.1 (Build 8902)</p>
+</div>
+</div>
+<script>
+    const slider = document.getElementById('radius-slider');
+    const valDisplay = document.getElementById('radius-val');
+    
+    slider.addEventListener('input', (e) => {
+        valDisplay.textContent = e.target.value;
+    });
+</script><div class="h-24"></div></main><nav class="fixed bottom-0 w-full z-50 bg-white/80 backdrop-blur-xl pb-safe shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="text-label-md font-label-md">Home</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined">explore</span><span class="text-label-md font-label-md">Explore</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="bookings" href="#"><span class="material-symbols-outlined">calendar_today</span><span class="text-label-md font-label-md">Bookings</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined">chat_bubble</span><span class="text-label-md font-label-md">Messages</span></a><a aria-current="page" class="flex flex-col items-center gap-xs transition-colors text-primary-container" data-path="profile" href="#"><span class="material-symbols-outlined">account_circle</span><span class="text-label-md font-label-md">Profile</span></a></div></nav></body></html>

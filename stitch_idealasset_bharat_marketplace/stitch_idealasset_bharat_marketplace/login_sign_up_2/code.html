@@ -1,0 +1,95 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#8b7265", "inverse-surface": "#31302e", "primary-container": "#f47920", "surface-dim": "#dcdad6", "surface-container-low": "#f6f3ef", "on-tertiary-fixed": "#002201", "on-error-container": "#93000a", "primary-fixed": "#ffdbc9", "on-background": "#1c1c1a", "on-primary-container": "#572400", "secondary-container": "#81b9ff", "on-secondary-container": "#004980", "secondary-fixed-dim": "#a1c9ff", "on-primary-fixed-variant": "#763300", "tertiary-container": "#5bae4f", "error": "#ba1a1a", "on-primary-fixed": "#321200", "surface-container-highest": "#e5e2de", "on-primary": "#ffffff", "surface-tint": "#9a4600", "surface-variant": "#e5e2de", "secondary-fixed": "#d2e4ff", "on-tertiary": "#ffffff", "tertiary-fixed": "#a0f88e", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-surface": "#1c1c1a", "on-tertiary-fixed-variant": "#005304", "on-secondary-fixed-variant": "#004880", "on-secondary": "#ffffff", "tertiary": "#186d15", "inverse-on-surface": "#f3f0ec", "on-secondary-fixed": "#001c37", "primary-fixed-dim": "#ffb68d", "on-surface-variant": "#574237", "on-tertiary-container": "#003d02", "outline-variant": "#dec0b1", "surface-container": "#f0edea", "background": "#fcf9f5", "surface": "#fcf9f5", "surface-bright": "#fcf9f5", "primary": "#9a4600", "tertiary-fixed-dim": "#85db75", "surface-container-high": "#ebe8e4", "inverse-primary": "#ffb68d", "error-container": "#ffdad6", "secondary": "#1961a1" }, "borderRadius": { "DEFAULT": "16px" } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }</style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface pt-safe pb-safe"><main><div class="flex flex-col w-full relative overflow-hidden px-margin-mobile pb-margin-mobile">
+<!-- Decorative Background Elements -->
+<div class="absolute top-0 left-0 w-full h-64 -z-10 overflow-hidden pointer-events-none">
+<svg class="absolute -top-10 -right-10 w-64 h-64 text-primary-fixed opacity-40 blur-3xl" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.7,-76.4C58.9,-69.2,71.8,-59.1,81.3,-46.3C90.8,-33.5,96.9,-18.1,96.5,-2.9C96.1,12.3,89.2,27.3,79.6,39.8C70,52.3,57.7,62.3,44,70.5C30.3,78.7,15.1,85.1,0.2,84.7C-14.6,84.4,-29.3,77.3,-42.6,68.6C-55.9,59.9,-67.8,49.6,-76.6,37C-85.4,24.4,-91.1,9.5,-90.4,-4.9C-89.7,-19.3,-82.6,-33.2,-72.6,-44.3C-62.6,-55.4,-49.7,-63.7,-36.5,-71.4C-23.3,-79.1,-9.8,-86.2,3.4,-90.9C16.6,-95.6,30.5,-83.6,44.7,-76.4Z" fill="currentColor" transform="translate(100 100)"></path>
+</svg>
+<svg class="absolute top-20 -left-12 w-48 h-48 text-secondary-fixed opacity-30 blur-2xl" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.9,-65.7C52.4,-58.5,63.6,-48.5,71.8,-36.4C80,-24.3,85.2,-10.1,84.4,4.1C83.6,18.3,76.8,32.5,67.3,44.2C57.8,55.9,45.6,65.1,31.9,71.1C18.2,77.1,3,79.9,-11.1,77.6C-25.2,75.3,-38.2,67.9,-50.2,58.1C-62.2,48.3,-73.2,36.1,-79.1,21.8C-85,7.5,-85.8,-8.9,-80.4,-23.5C-75,-38.1,-63.4,-50.9,-50,-58.5C-36.6,-66.1,-21.4,-68.5,-6.7,-68C8,-67.5,27.4,-72.9,39.9,-65.7Z" fill="currentColor" transform="translate(100 100)"></path>
+</svg>
+</div>
+<!-- Header Area -->
+<div class="flex flex-col gap-stack-sm mt-stack-lg mb-stack-lg pt-12">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Welcome back</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Access your organization's dashboard.</p>
+</div>
+<!-- Toggle / Tabs -->
+<div class="flex p-unit bg-surface-container rounded-full mb-stack-lg shadow-sm relative">
+<button class="flex-1 py-3 font-label-lg text-label-lg rounded-full bg-primary text-on-primary shadow-sm transition-all duration-300 z-10" id="tab-login" onclick="switchTab('login')">
+      Log In
+    </button>
+<button class="flex-1 py-3 font-label-lg text-label-lg rounded-full text-on-surface-variant transition-all duration-300 z-10" id="tab-signup" onclick="switchTab('signup')">
+      Sign Up
+    </button>
+</div>
+<!-- Form Area -->
+<form class="flex flex-col gap-stack-md mb-stack-lg" onsubmit="event.preventDefault();">
+<div class="flex flex-col gap-unit">
+<label class="font-label-md text-label-md text-on-surface-variant px-unit">Email Address</label>
+<div class="flex items-center bg-surface-container-low rounded-lg shadow-sm px-4 py-1 transition-colors duration-200" id="email-container">
+<span class="material-symbols-outlined text-on-surface-variant mr-3 text-opacity-70">mail</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface py-3 focus:outline-none" onblur="document.getElementById('email-container').classList.replace('bg-surface-container-highest', 'bg-surface-container-low')" onfocus="document.getElementById('email-container').classList.replace('bg-surface-container-low', 'bg-surface-container-highest')" placeholder="name@organization.org" type="email"/>
+</div>
+</div>
+<button class="w-full mt-stack-sm py-4 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg shadow-md flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+      Continue with Email
+      <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+<!-- Divider -->
+<div class="flex items-center justify-center gap-4 mb-stack-lg">
+<div class="h-[1px] w-1/4 bg-surface-variant"></div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Or</span>
+<div class="h-[1px] w-1/4 bg-surface-variant"></div>
+</div>
+<!-- Social Login -->
+<div class="flex flex-col gap-stack-md">
+<button class="w-full py-4 bg-surface-container-lowest text-on-surface rounded-lg shadow-sm flex items-center justify-center gap-3 font-label-lg text-label-lg active:bg-surface-container transition-colors">
+<svg class="w-5 h-5" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+      Continue with Google
+    </button>
+</div>
+<!-- Footer Terms -->
+<div class="mt-auto pt-stack-lg pb-unit text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      By continuing, you agree to our <br/>
+<a class="text-primary font-label-md text-label-md" href="#">Terms of Service</a> and <a class="text-primary font-label-md text-label-md" href="#">Privacy Policy</a>.
+    </p>
+</div>
+<script>
+    function switchTab(tab) {
+      const loginBtn = document.getElementById('tab-login');
+      const signupBtn = document.getElementById('tab-signup');
+      const title = document.querySelector('h1');
+      const subtitle = document.querySelector('p');
+
+      // Reset classes
+      const activeClasses = ['bg-primary', 'text-on-primary', 'shadow-sm'];
+      const inactiveClasses = ['text-on-surface-variant'];
+
+      if (tab === 'login') {
+        loginBtn.classList.remove(...inactiveClasses);
+        loginBtn.classList.add(...activeClasses);
+        signupBtn.classList.remove(...activeClasses);
+        signupBtn.classList.add(...inactiveClasses);
+        
+        title.textContent = 'Welcome back';
+        subtitle.textContent = "Access your organization's dashboard.";
+      } else {
+        signupBtn.classList.remove(...inactiveClasses);
+        signupBtn.classList.add(...activeClasses);
+        loginBtn.classList.remove(...activeClasses);
+        loginBtn.classList.add(...inactiveClasses);
+        
+        title.textContent = 'Create account';
+        subtitle.textContent = "Join the platform to manage assets.";
+      }
+    }
+  </script>
+</div></main></body></html>

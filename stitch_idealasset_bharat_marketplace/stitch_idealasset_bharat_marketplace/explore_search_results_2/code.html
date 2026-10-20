@@ -1,0 +1,250 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#8b7265", "inverse-surface": "#31302e", "primary-container": "#f47920", "surface-dim": "#dcdad6", "surface-container-low": "#f6f3ef", "on-tertiary-fixed": "#002201", "on-error-container": "#93000a", "primary-fixed": "#ffdbc9", "on-background": "#1c1c1a", "on-primary-container": "#572400", "secondary-container": "#81b9ff", "on-secondary-container": "#004980", "secondary-fixed-dim": "#a1c9ff", "on-primary-fixed-variant": "#763300", "tertiary-container": "#5bae4f", "error": "#ba1a1a", "on-primary-fixed": "#321200", "surface-container-highest": "#e5e2de", "on-primary": "#ffffff", "surface-tint": "#9a4600", "surface-variant": "#e5e2de", "secondary-fixed": "#d2e4ff", "on-tertiary": "#ffffff", "tertiary-fixed": "#a0f88e", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-surface": "#1c1c1a", "on-tertiary-fixed-variant": "#005304", "on-secondary-fixed-variant": "#004880", "on-secondary": "#ffffff", "tertiary": "#186d15", "inverse-on-surface": "#f3f0ec", "on-secondary-fixed": "#001c37", "primary-fixed-dim": "#ffb68d", "on-surface-variant": "#574237", "on-tertiary-container": "#003d02", "outline-variant": "#dec0b1", "surface-container": "#f0edea", "background": "#fcf9f5", "surface": "#fcf9f5", "surface-bright": "#fcf9f5", "primary": "#9a4600", "tertiary-fixed-dim": "#85db75", "surface-container-high": "#ebe8e4", "inverse-primary": "#ffb68d", "error-container": "#ffdad6", "secondary": "#1961a1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "16px", "margin-desktop": "40px", "stack-md": "16px", "stack-sm": "8px", "unit": "8px", "gutter": "24px", "stack-lg": "32px", "container-max-width": "1280px" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }</style></head><body class="bg-surface text-on-surface font-body-md"><header class="fixed top-0 w-full z-50 bg-[#0A2A6B] pt-safe shadow-[0_4px_20px_rgba(10,42,107,0.1)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-stack-md"><div class="flex items-center gap-stack-sm"><img alt="idealAsset BHARAT" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqA2hgnJwpiyKRRtzF8TYu1QtUPAgUfbctavT1Q89C_6auWrh13k42p0jEsxnLrjiBMH0V4r5UQF-YqNxejkf2AxrICoXoJtUOXIYw57Dn-UwQW-XWI8GgnIVkwA55HbEScbpukwPHD8OpXylTvoi2OTDkJqOEYU15QLfRBlzBfRvNtVo7ep7oCewwlDdE-eHYbI7qJi87rmXNYogFXejYFzDFqSY6b3JAXRNa40a6Q2YSgcUaCQcm"/></div><div class="flex-1 flex justify-center items-center gap-unit px-stack-md py-unit bg-white/10 rounded-full text-white/90 max-w-[180px]"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="text-label-md font-label-md truncate">Select Location</span></div><div class="flex items-center gap-stack-md"><div class="w-10 h-10 flex items-center justify-center text-white relative"><span class="material-symbols-outlined">notifications</span><div class="absolute top-2.5 right-2.5 w-2 h-2 bg-primary-container rounded-full"></div></div><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-white/20"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div></div></div></header><main class="pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Sticky Search & Filter Header -->
+<div class="sticky top-16 z-40 bg-surface/90 backdrop-blur-lg px-margin-mobile py-stack-md flex flex-col gap-stack-md shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
+<!-- Search Bar -->
+<div class="flex items-center bg-surface-container-lowest rounded-lg shadow-sm h-[48px] px-stack-md gap-stack-sm focus-within:shadow-md transition-shadow relative">
+<span class="material-symbols-outlined text-secondary">search</span>
+<input class="flex-1 bg-transparent border-none focus:outline-none text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant truncate" placeholder="Search facilities, locations, or asset types..." type="text"/>
+<button class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container text-on-surface transition-colors hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Toggle & Quick Filters -->
+<div class="flex items-center justify-between gap-stack-md">
+<!-- Quick Filters (Scrollable) -->
+<div class="flex-1 overflow-x-auto hide-scrollbar flex items-center gap-stack-sm pb-1">
+<button class="whitespace-nowrap px-stack-md h-8 rounded-full bg-secondary-container text-on-secondary-container text-label-md font-label-md transition-colors">
+          All Assets
+        </button>
+<button class="whitespace-nowrap px-stack-md h-8 rounded-full bg-surface-container text-on-surface text-label-md font-label-md hover:bg-surface-container-highest transition-colors">
+          Auditoriums
+        </button>
+<button class="whitespace-nowrap px-stack-md h-8 rounded-full bg-surface-container text-on-surface text-label-md font-label-md hover:bg-surface-container-highest transition-colors">
+          Sports Grounds
+        </button>
+<button class="whitespace-nowrap px-stack-md h-8 rounded-full bg-surface-container text-on-surface text-label-md font-label-md hover:bg-surface-container-highest transition-colors">
+          Offices
+        </button>
+</div>
+<!-- Map / List Toggle -->
+<div class="flex items-center bg-surface-container rounded-lg p-1 shrink-0">
+<button aria-label="List View" class="flex items-center justify-center w-10 h-8 rounded-DEFAULT bg-surface-container-lowest text-primary shadow-sm transition-all" id="btn-list">
+<span 1;'"="" class="material-symbols-outlined text-[20px] style='font-variation-settings: \" fill\"="">view_list</span>
+</button>
+<button aria-label="Map View" class="flex items-center justify-center w-10 h-8 rounded-DEFAULT bg-transparent text-on-surface-variant hover:text-on-surface transition-all" id="btn-map">
+<span class="material-symbols-outlined text-[20px]">map</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="flex flex-col px-margin-mobile gap-stack-lg pb-stack-lg" id="view-list">
+<!-- Results Info -->
+<div class="flex items-center justify-between pt-stack-sm">
+<h2 class="text-headline-sm font-headline-sm text-on-surface">14 Assets Found</h2>
+<button class="flex items-center gap-unit text-secondary text-label-md font-label-md">
+<span>Sort by: Relevance</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+<!-- Asset Card 1 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg shadow-md overflow-hidden transition-transform active:scale-[0.98]">
+<div class="w-full h-48 bg-cover bg-center relative" data-alt="A modern, well-lit community hall with wooden flooring and rows of neat chairs, warm orange and green accents, professional photography, clean lines, conveying a sense of community trust and organization." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCS6-lYB2YfebKD2tfxxRiGNUVJtUt9AExpHqIdgF2QyFhm8g09Lwi4W1AzdWja-H5DNI10kmioUBs_XHZvV06R3lbQZQcDGV9fdxuke-FYI0R0kf8d3xvq3c6_-gouF3oTsm9LbYshZf4MYFHFNY8NTTeMv8r5FTF4XE7n7_fm5OhFen0eO2ioe5eeZd0_1LEWYwc1UdAfJ6ZBnUCd0-jV-LI_j2tur5A9eeTZHlitqZGyJ4xlUcrm')">
+<!-- Floating Status Tag -->
+<div class="absolute top-stack-md left-stack-md px-stack-sm py-1 rounded-full bg-tertiary-container text-on-tertiary-container text-label-md font-label-md flex items-center gap-unit shadow-sm">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+          Available Now
+        </div>
+<!-- Favorite Button -->
+<button class="absolute top-stack-md right-stack-md w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-stack-md flex flex-col gap-stack-sm">
+<div class="flex flex-col gap-1">
+<h3 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Metro Community Center Hall</h3>
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="truncate">Block A, Central District • 2.4 km away</span>
+</div>
+</div>
+<!-- Specs -->
+<div class="flex items-center gap-stack-md py-stack-sm">
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">groups</span>
+<span>Up to 250 pax</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-surface-variant"></div>
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">square_foot</span>
+<span>4,500 sq ft</span>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="flex items-center justify-between pt-stack-sm">
+<div class="flex flex-col">
+<span class="text-headline-md font-headline-md text-primary">₹5,000</span>
+<span class="text-label-md font-label-md text-on-surface-variant">per day</span>
+</div>
+<button class="h-[48px] px-stack-lg rounded-lg bg-primary text-on-primary text-label-lg font-label-lg shadow-sm hover:bg-surface-tint transition-colors">
+            Book Now
+          </button>
+</div>
+</div>
+</div>
+<!-- Asset Card 2 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg shadow-md overflow-hidden transition-transform active:scale-[0.98]">
+<div class="w-full h-48 bg-cover bg-center relative" data-alt="A pristine outdoor sports ground attached to a school building, sunny day, clear blue skies, vibrant green grass, structural navy blue fencing, highly organized, inspiring physical activity and structured play." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3MfC50p1q3RZil0H6XS_NEfbRgHUZWUDZPlt9gXd0HxiWfpqtjwPbOO9o6-IMnErGJ-zIBWOP2vEB09E_xT6H2AL5GeTpuxJXAJfW3091NgWj9wPF6Yo9fLFxtu21b8DwQfhC7cz0NtauaccwxHcKu9ldOdYj4nVAp6o6jlj2SpL9NPOcOC7NhIABpzC9_NXVlgg3Yysj_RKvYfkERrDNdBsIwB60OoEBuChYJ27ztV5Y_d9fAJwD')">
+<div class="absolute top-stack-md left-stack-md px-stack-sm py-1 rounded-full bg-primary-container text-on-primary-container text-label-md font-label-md flex items-center gap-unit shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+          High Demand
+        </div>
+<button class="absolute top-stack-md right-stack-md w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="p-stack-md flex flex-col gap-stack-sm">
+<div class="flex flex-col gap-1">
+<h3 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Govt. Senior Secondary Ground</h3>
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="truncate">Sector 14, North Zone • 5.1 km away</span>
+</div>
+</div>
+<!-- Specs -->
+<div class="flex items-center gap-stack-md py-stack-sm">
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">sports_soccer</span>
+<span>Multi-sports</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-surface-variant"></div>
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">wb_sunny</span>
+<span>Outdoor</span>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="flex items-center justify-between pt-stack-sm">
+<div class="flex flex-col">
+<span class="text-headline-md font-headline-md text-primary">₹1,200</span>
+<span class="text-label-md font-label-md text-on-surface-variant">per hour</span>
+</div>
+<button class="h-[48px] px-stack-lg rounded-lg bg-surface text-secondary text-label-lg font-label-lg shadow-sm hover:bg-surface-container-low transition-colors ring-1 ring-inset ring-secondary/20">
+            View Details
+          </button>
+</div>
+</div>
+</div>
+<!-- Asset Card 3 -->
+<div class="flex flex-col bg-surface-container-lowest rounded-lg shadow-md overflow-hidden transition-transform active:scale-[0.98]">
+<div class="w-full h-48 bg-cover bg-center relative" data-alt="A contemporary small office space with a large conference table, ergonomic chairs, glass partitions, bright and airy, plants in the corner, corporate trust aesthetic, modern organizational efficiency." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDum_yakdaTf15FptLPYEtPeGjxNtRbTsFzoZVcRJKUdDGpRfL9nzn2leCvVtNB1eoBqsBDMa9Wwvh7Z9LFVVTjnJfZRks9IZBdyNdHNoL61YmRhgIxO9gwSle6eFES01ig8OLV6rTMW_RDSD1XQumd8oVIt8lrZF2L2Z9-P_yIUWNB6kWxr0XViP_w8zoHBzwYQF6P6TphELQGD8rzR_ub4lr3IOskhnydnyW6enPM9nl8H3XMcYfz')">
+<div class="absolute top-stack-md left-stack-md px-stack-sm py-1 rounded-full bg-tertiary-container text-on-tertiary-container text-label-md font-label-md flex items-center gap-unit shadow-sm">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+          Available Now
+        </div>
+<button class="absolute top-stack-md right-stack-md w-8 h-8 rounded-full bg-surface/80 backdrop-blur-sm flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-stack-md flex flex-col gap-stack-sm">
+<div class="flex flex-col gap-1">
+<h3 class="text-headline-sm font-headline-sm text-on-surface line-clamp-1">Municipal Boardroom Annex</h3>
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="truncate">City Center Complex • 1.2 km away</span>
+</div>
+</div>
+<!-- Specs -->
+<div class="flex items-center gap-stack-md py-stack-sm">
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">wifi</span>
+<span>High-speed Wi-Fi</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-surface-variant"></div>
+<div class="flex items-center gap-unit text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">co_present</span>
+<span>Projector incl.</span>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="flex items-center justify-between pt-stack-sm">
+<div class="flex flex-col">
+<span class="text-headline-md font-headline-md text-primary">₹800</span>
+<span class="text-label-md font-label-md text-on-surface-variant">per hour</span>
+</div>
+<button class="h-[48px] px-stack-lg rounded-lg bg-primary text-on-primary text-label-lg font-label-lg shadow-sm hover:bg-surface-tint transition-colors">
+            Book Now
+          </button>
+</div>
+</div>
+</div>
+<!-- Loading More Spinner -->
+<div class="flex items-center justify-center py-stack-md">
+<div class="w-8 h-8 rounded-full border-4 border-surface-variant border-t-primary animate-spin"></div>
+</div>
+</div>
+<!-- Map View (Hidden by default) -->
+<div class="hidden flex-1 relative w-full h-[calc(100vh-200px)] px-margin-mobile pb-margin-mobile" id="view-map">
+<div class="w-full h-full rounded-lg overflow-hidden shadow-md relative">
+<div class="w-full h-full bg-cover bg-center" data-location="New Delhi, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBZqWeF8qDH6A0ANF6cHPDAoOzY6cYOJyXsf0LWH_cokizXAtnOXOm_FtatPYZW_v1ttpN-gsmr39S_aZmIlFYzJt7cvaOmvUByROjDU-pjsJpkDConnK7jqWpNNU28CWgVj0K0e1OvyCNoejmdIgUnS00VTqzA1eH_RF8R1ImepujuL09LUjFzY9TTzc5iYFeSfVFtmGmZq0j8fyuWnFbn40woL8m7JGK2MqUV8ihS5dfi88tpDn5C')"></div>
+<!-- Mock Map Pin -->
+<div class="absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center animate-bounce">
+<div class="bg-primary text-on-primary px-stack-sm py-1 rounded-full text-label-md font-label-md shadow-md mb-1">
+          ₹5,000
+        </div>
+<div class="w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-primary"></div>
+<div class="w-2 h-2 bg-black/20 rounded-full mt-1 blur-[1px]"></div>
+</div>
+<!-- Mock Map Pin 2 -->
+<div class="absolute top-1/3 left-2/3 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="bg-surface text-on-surface px-stack-sm py-1 rounded-full text-label-md font-label-md shadow-md mb-1">
+          ₹1,200
+        </div>
+<div class="w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-surface"></div>
+</div>
+<!-- Re-center Button -->
+<button class="absolute bottom-stack-md right-stack-md w-12 h-12 rounded-full bg-surface-container-lowest text-secondary shadow-lg flex items-center justify-center transition-transform active:scale-95">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnList = document.getElementById('btn-list');
+    const btnMap = document.getElementById('btn-map');
+    const viewList = document.getElementById('view-list');
+    const viewMap = document.getElementById('view-map');
+
+    const setActiveState = (activeBtn, inactiveBtn) => {
+      // Active styling
+      activeBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      activeBtn.classList.remove('bg-transparent', 'text-on-surface-variant');
+      const activeIcon = activeBtn.querySelector('span');
+      if(activeIcon) activeIcon.style.fontVariationSettings = "'FILL' 1";
+      
+      // Inactive styling
+      inactiveBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      inactiveBtn.classList.add('bg-transparent', 'text-on-surface-variant');
+      const inactiveIcon = inactiveBtn.querySelector('span');
+      if(inactiveIcon) inactiveIcon.style.fontVariationSettings = "'FILL' 0";
+    };
+
+    btnList.addEventListener('click', () => {
+      setActiveState(btnList, btnMap);
+      viewList.classList.remove('hidden');
+      viewList.classList.add('flex');
+      viewMap.classList.add('hidden');
+      viewMap.classList.remove('flex');
+    });
+
+    btnMap.addEventListener('click', () => {
+      setActiveState(btnMap, btnList);
+      viewMap.classList.remove('hidden');
+      viewMap.classList.add('flex');
+      viewList.classList.add('hidden');
+      viewList.classList.remove('flex');
+    });
+  });
+</script><div class="h-24"></div></main><nav class="fixed bottom-0 w-full z-50 bg-white/90 backdrop-blur-xl pb-safe shadow-[0_-4px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center gap-stack-sm text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="text-label-md font-label-md">Home</span></a><a aria-current="page" class="flex flex-col items-center gap-stack-sm transition-colors text-primary" data-path="explore" href="#"><span class="material-symbols-outlined">explore</span><span class="text-label-md font-label-md">Explore</span></a><a class="flex flex-col items-center gap-stack-sm text-on-surface-variant transition-colors" data-path="bookings" href="#"><span class="material-symbols-outlined">calendar_today</span><span class="text-label-md font-label-md">Bookings</span></a><a class="flex flex-col items-center gap-stack-sm text-on-surface-variant transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined">chat_bubble</span><span class="text-label-md font-label-md">Messages</span></a><a class="flex flex-col items-center gap-stack-sm text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined">account_circle</span><span class="text-label-md font-label-md">Profile</span></a></div></nav></body></html>

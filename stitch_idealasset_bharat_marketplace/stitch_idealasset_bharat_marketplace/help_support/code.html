@@ -1,0 +1,69 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#005322", "outline-variant": "#e0c0b0", "secondary-fixed": "#9df6ab", "primary-fixed-dim": "#ffb68e", "secondary": "#0a6d31", "tertiary": "#435c9e", "tertiary-fixed-dim": "#b3c5ff", "surface-dim": "#cedbef", "inverse-surface": "#253140", "on-background": "#0f1c2a", "surface-container-low": "#eef4ff", "inverse-primary": "#ffb68e", "primary-fixed": "#ffdbc9", "secondary-container": "#9af4a8", "on-secondary-container": "#137235", "primary-container": "#f97302", "on-error": "#ffffff", "inverse-on-surface": "#e9f1ff", "surface-bright": "#f8f9ff", "on-primary": "#ffffff", "primary": "#9b4500", "background": "#f8f9ff", "on-primary-container": "#562300", "surface": "#f8f9ff", "on-surface-variant": "#584236", "outline": "#8c7164", "on-primary-fixed-variant": "#763300", "on-error-container": "#93000a", "on-surface": "#0f1c2a", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "surface-container-high": "#dce9fd", "tertiary-fixed": "#dbe1ff", "tertiary-container": "#8098df", "surface-tint": "#9b4500", "on-tertiary-container": "#102e6f", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#2a4385", "on-primary-fixed": "#331200", "surface-container-highest": "#d6e4f7", "error": "#ba1a1a", "on-secondary-fixed": "#00210a", "on-tertiary": "#ffffff", "surface-variant": "#d6e4f7", "surface-container": "#e4efff", "secondary-fixed-dim": "#82da91", "on-tertiary-fixed": "#00184a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "base": "8px", "xs": "4px", "gutter": "16px", "md": "16px", "lg": "24px", "xl": "32px", "sm": "12px", "container-margin": "20px" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }</style></head><body class="bg-surface text-on-surface font-body-md"><header class="fixed top-0 w-full z-50 bg-[#0A2A6B] pt-safe shadow-[0_4px_20px_rgba(10,42,107,0.1)]"><div class="h-16 px-container-margin flex items-center justify-between gap-md"><div class="flex items-center gap-xs text-white font-headline-md text-headline-md italic tracking-tighter">iA<span class="text-primary-container font-bold">B</span></div><div class="flex-1 flex justify-center items-center gap-xs px-md py-xs bg-white/10 rounded-full text-white/90 max-w-[200px]"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="text-label-md font-label-md truncate">Select Location</span></div><div class="flex items-center gap-md"><div class="w-8 h-8 flex items-center justify-center text-white relative"><span class="material-symbols-outlined">notifications</span><div class="absolute top-1 right-1 w-2 h-2 bg-primary-container rounded-full"></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border border-white/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="px-container-margin py-xl flex flex-col gap-lg">
+<div class="flex flex-col gap-base text-center">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">How can we help?</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Search our FAQs or get in touch with our team.</p>
+</div>
+<div class="relative w-full shadow-sm rounded-xl overflow-hidden">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-high text-on-surface placeholder:text-on-surface-variant py-sm pl-xl pr-sm focus:outline-none font-body-md text-body-md transition-colors focus:bg-surface-container-highest" placeholder="Search for answers..." type="text"/>
+</div>
+<div class="flex flex-col gap-md">
+<h2 class="font-headline-md text-headline-md text-on-surface">Popular Questions</h2>
+<div class="flex flex-col gap-sm bg-surface-container-lowest rounded-xl shadow-sm p-sm">
+<button class="flex items-center justify-between w-full text-left p-sm group transition-colors hover:bg-surface-container-low rounded-lg" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span:last-child').classList.toggle('rotate-180')">
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary">Where is iAB available?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200">expand_more</span>
+</button>
+<div class="hidden px-sm pb-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">We currently operate in major metropolitan areas. You can select your location in the top navigation bar to see available assets near you. We are expanding rapidly!</p>
+</div>
+</div>
+<div class="flex flex-col gap-sm bg-surface-container-lowest rounded-xl shadow-sm p-sm">
+<button class="flex items-center justify-between w-full text-left p-sm group transition-colors hover:bg-surface-container-low rounded-lg" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span:last-child').classList.toggle('rotate-180')">
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary">How do I verify my identity?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200">expand_more</span>
+</button>
+<div class="hidden px-sm pb-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Identity verification is quick and secure. Go to your Profile &gt; Trust &amp; Safety and follow the prompts to upload a valid government-issued ID.</p>
+</div>
+</div>
+<div class="flex flex-col gap-sm bg-surface-container-lowest rounded-xl shadow-sm p-sm">
+<button class="flex items-center justify-between w-full text-left p-sm group transition-colors hover:bg-surface-container-low rounded-lg" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('span:last-child').classList.toggle('rotate-180')">
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary">What happens if an asset is damaged?</span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200">expand_more</span>
+</button>
+<div class="hidden px-sm pb-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Please report any damage immediately through the active booking screen. Our institutional guarantee covers accidental damage for verified users.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-md mt-lg">
+<h2 class="font-headline-md text-headline-md text-on-surface">Still need help?</h2>
+<div class="bg-surface-container-low rounded-xl shadow-sm p-lg flex flex-col gap-md relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/5 rounded-full blur-2xl"></div>
+<div class="flex items-start gap-md relative z-10">
+<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div class="flex flex-col gap-xs">
+<span class="font-label-md text-label-md text-on-surface">Contact Support</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our trust &amp; safety team is available 24/7 to assist with urgent issues.</p>
+</div>
+</div>
+<div class="flex flex-col gap-sm relative z-10">
+<button class="w-full py-sm bg-secondary text-on-secondary rounded-lg font-label-md text-label-md flex justify-center items-center gap-xs shadow-sm transition-transform active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">mail</span> Email Support
+          </button>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-20 left-0 w-full px-container-margin z-40">
+<button class="w-full py-md bg-primary-container text-on-primary-container rounded-xl font-label-md text-label-md flex justify-center items-center gap-sm shadow-xl shadow-primary-container/20 transition-transform active:scale-[0.98]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+      Start Live Chat
+    </button>
+</div>
+</div><div class="h-24"></div></main><nav class="fixed bottom-0 w-full z-50 bg-white/80 backdrop-blur-xl pb-safe shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="text-label-md font-label-md">Home</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined">explore</span><span class="text-label-md font-label-md">Explore</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="bookings" href="#"><span class="material-symbols-outlined">calendar_today</span><span class="text-label-md font-label-md">Bookings</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined">chat_bubble</span><span class="text-label-md font-label-md">Messages</span></a><a aria-current="page" class="flex flex-col items-center gap-xs transition-colors text-primary-container" data-path="profile" href="#"><span class="material-symbols-outlined">account_circle</span><span class="text-label-md font-label-md">Profile</span></a></div></nav></body></html>

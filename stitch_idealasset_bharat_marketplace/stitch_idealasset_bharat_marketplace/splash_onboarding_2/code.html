@@ -1,0 +1,85 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#8b7265", "inverse-surface": "#31302e", "primary-container": "#f47920", "surface-dim": "#dcdad6", "surface-container-low": "#f6f3ef", "on-tertiary-fixed": "#002201", "on-error-container": "#93000a", "primary-fixed": "#ffdbc9", "on-background": "#1c1c1a", "on-primary-container": "#572400", "secondary-container": "#81b9ff", "on-secondary-container": "#004980", "secondary-fixed-dim": "#a1c9ff", "on-primary-fixed-variant": "#763300", "tertiary-container": "#5bae4f", "error": "#ba1a1a", "on-primary-fixed": "#321200", "surface-container-highest": "#e5e2de", "on-primary": "#ffffff", "surface-tint": "#9a4600", "surface-variant": "#e5e2de", "secondary-fixed": "#d2e4ff", "on-tertiary": "#ffffff", "tertiary-fixed": "#a0f88e", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-surface": "#1c1c1a", "on-tertiary-fixed-variant": "#005304", "on-secondary-fixed-variant": "#004880", "on-secondary": "#ffffff", "tertiary": "#186d15", "inverse-on-surface": "#f3f0ec", "on-secondary-fixed": "#001c37", "primary-fixed-dim": "#ffb68d", "on-surface-variant": "#574237", "on-tertiary-container": "#003d02", "outline-variant": "#dec0b1", "surface-container": "#f0edea", "background": "#fcf9f5", "surface": "#fcf9f5", "surface-bright": "#fcf9f5", "primary": "#9a4600", "tertiary-fixed-dim": "#85db75", "surface-container-high": "#ebe8e4", "inverse-primary": "#ffb68d", "error-container": "#ffdad6", "secondary": "#1961a1" }, "borderRadius": { "DEFAULT": "16px" } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior: none; }</style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface pt-safe pb-safe"><main><div class="flex flex-col w-full h-full justify-between pb-margin-mobile relative overflow-hidden bg-surface">
+<div class="absolute inset-0 w-full h-full pointer-events-none opacity-[0.03]">
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect class="text-primary" fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none mix-blend-multiply"></div>
+<div class="absolute top-1/2 -right-32 w-80 h-80 bg-tertiary-fixed/20 rounded-full blur-3xl pointer-events-none mix-blend-multiply"></div>
+<div class="flex-grow flex flex-col items-center justify-center px-margin-mobile pt-margin-mobile relative z-10 text-center">
+<div class="w-24 h-24 mb-stack-lg animate-bounce" style="animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;">
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 10L90 30V70L50 90L10 70V30L50 10Z" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="4"></path>
+<path d="M50 10L50 50M90 30L50 50M10 30L50 50M50 90L50 50" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+<circle class="text-tertiary" cx="50" cy="50" fill="currentColor" r="8"></circle>
+</svg>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-stack-sm tracking-tight">
+      idealAsset <span class="text-primary">BHARAT</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-[280px]">
+      Empowering communities through shared resources.
+    </p>
+</div>
+<div class="px-margin-mobile w-full relative z-10">
+<div class="bg-surface-container-low rounded-xl p-gutter shadow-sm mb-stack-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full"></div>
+<div class="flex flex-col gap-stack-md">
+<div class="flex items-start gap-stack-sm opacity-0 translate-y-4" style="animation: fadeInUp 0.6s ease-out 0.2s forwards;">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Discover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Find underutilized public spaces and equipment.</p>
+</div>
+</div>
+<div class="flex items-start gap-stack-sm opacity-0 translate-y-4" style="animation: fadeInUp 0.6s ease-out 0.4s forwards;">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Connect</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Request access securely from verified entities.</p>
+</div>
+</div>
+<div class="flex items-start gap-stack-sm opacity-0 translate-y-4" style="animation: fadeInUp 0.6s ease-out 0.6s forwards;">
+<div class="w-8 h-8 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Grow</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Activate spaces for community and business growth.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-stack-sm w-full opacity-0 translate-y-4" style="animation: fadeInUp 0.6s ease-out 0.8s forwards;">
+<button class="w-full h-12 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors shadow-md">
+        Get Started
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full h-12 bg-transparent text-primary rounded-lg font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center hover:bg-primary/5 transition-colors">
+        Log In
+      </button>
+</div>
+</div>
+</div>
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style></main></body></html>

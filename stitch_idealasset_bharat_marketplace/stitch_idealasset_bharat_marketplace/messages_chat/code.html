@@ -1,0 +1,187 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#005322", "outline-variant": "#e0c0b0", "secondary-fixed": "#9df6ab", "primary-fixed-dim": "#ffb68e", "secondary": "#0a6d31", "tertiary": "#435c9e", "tertiary-fixed-dim": "#b3c5ff", "surface-dim": "#cedbef", "inverse-surface": "#253140", "on-background": "#0f1c2a", "surface-container-low": "#eef4ff", "inverse-primary": "#ffb68e", "primary-fixed": "#ffdbc9", "secondary-container": "#9af4a8", "on-secondary-container": "#137235", "primary-container": "#f97302", "on-error": "#ffffff", "inverse-on-surface": "#e9f1ff", "surface-bright": "#f8f9ff", "on-primary": "#ffffff", "primary": "#9b4500", "background": "#f8f9ff", "on-primary-container": "#562300", "surface": "#f8f9ff", "on-surface-variant": "#584236", "outline": "#8c7164", "on-primary-fixed-variant": "#763300", "on-error-container": "#93000a", "on-surface": "#0f1c2a", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "surface-container-high": "#dce9fd", "tertiary-fixed": "#dbe1ff", "tertiary-container": "#8098df", "surface-tint": "#9b4500", "on-tertiary-container": "#102e6f", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#2a4385", "on-primary-fixed": "#331200", "surface-container-highest": "#d6e4f7", "error": "#ba1a1a", "on-secondary-fixed": "#00210a", "on-tertiary": "#ffffff", "surface-variant": "#d6e4f7", "surface-container": "#e4efff", "secondary-fixed-dim": "#82da91", "on-tertiary-fixed": "#00184a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "base": "8px", "xs": "4px", "gutter": "16px", "md": "16px", "lg": "24px", "xl": "32px", "sm": "12px", "container-margin": "20px" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }</style></head><body class="bg-surface text-on-surface font-body-md"><header class="fixed top-0 w-full z-50 bg-[#0A2A6B] pt-safe shadow-[0_4px_20px_rgba(10,42,107,0.1)]"><div class="h-16 px-container-margin flex items-center justify-between gap-md"><div class="flex items-center gap-xs text-white font-headline-md text-headline-md italic tracking-tighter">iA<span class="text-primary-container font-bold">B</span></div><div class="flex-1 flex justify-center items-center gap-xs px-md py-xs bg-white/10 rounded-full text-white/90 max-w-[200px]"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="text-label-md font-label-md truncate">Select Location</span></div><div class="flex items-center gap-md"><div class="w-8 h-8 flex items-center justify-center text-white relative"><span class="material-symbols-outlined">notifications</span><div class="absolute top-1 right-1 w-2 h-2 bg-primary-container rounded-full"></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border border-white/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full h-full relative">
+<!-- Conversation List View (Active by default) -->
+<div class="flex flex-col w-full" id="conversation-list">
+<!-- Search Bar -->
+<div class="px-container-margin py-sm bg-surface sticky top-0 z-10 shadow-[0_2px_10px_rgba(10,42,107,0.05)]">
+<div class="flex items-center gap-sm bg-surface-container-low rounded-full px-md py-sm transition-colors focus-within:bg-surface-container">
+<span class="material-symbols-outlined text-on-surface-variant">search</span>
+<input class="flex-1 bg-transparent border-none focus:outline-none text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant/50" placeholder="Search messages..." type="text"/>
+</div>
+</div>
+<!-- Active Chats -->
+<div class="px-container-margin py-xs flex flex-col gap-xs mt-sm">
+<!-- Chat Item 1 (Unread) -->
+<button class="chat-item flex items-center gap-md p-sm rounded-xl bg-surface-container-low transition-transform active:scale-[0.98] text-left">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Professional headshot of a friendly woman in her 30s with short curly hair, smiling warmly. Natural lighting, shallow depth of field. Soft deep navy and terracotta color palette in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMJ4IZ0Zu7ZW03qOoHzxTPsk_vQ-UBzORnhzT9xpL2Ua0CQKSLVS3O0gEpdeTmZloLviZ4_EGTdjV9dwP77LNLnriBPSdUzPYpnTYoIPcGNYOh3rQA8Jc9tTYviFJN9ErOr5CeoEM7D0uEpIXOyLey5IKcEuGWMoIB95Od7HOY8-xHfjsxdoBX9EV-CTpEw6t8yyTNRBo28W1L_3gh9bCJtMgHyCEK_f0tSFVhoG0K3l7xpJ-BCPST"/>
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-primary-container rounded-full flex items-center justify-center text-[10px] font-bold text-white shadow-sm ring-2 ring-surface">2</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-xs">
+<h3 class="font-headline-md text-body-md text-on-surface truncate">Sarah Jenkins</h3>
+<span class="font-label-md text-label-md text-primary-container">10:42 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold truncate">I'll leave the keys in the lockbox for you!</p>
+<div class="flex items-center gap-xs mt-1">
+<span class="px-2 py-0.5 rounded-sm bg-tertiary-container/20 text-on-tertiary-container font-label-md text-[10px]">Booking Confirmed</span>
+</div>
+</div>
+</button>
+<!-- Chat Item 2 -->
+<button class="chat-item flex items-center gap-md p-sm rounded-xl hover:bg-surface-container-lowest transition-colors text-left">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm" data-alt="Portrait of a young man with glasses and a beard, wearing a casual button-down shirt. Outdoor setting with blurred greenery. Soft natural lighting, conveying trustworthiness and approachability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOjXITSSs0e2xAufPrzncHtTP7cK9ZIhFf9-nCVt1jJjYIWocRk3AdO85p63y_a-zlhyKMNSMs-Z-_NZTUimpA_gJwgRmLv9_vAdpwMdbinjeiLYEt7BoPXYL9BAJQ1VfEOh8Bg5LnxtXg6xwro6awsdPyodJYO1HnKXNJQy6IGNts6VunN8M63I1-tXSlx_wyT5Z0aG3VSHu-7Kb8lOry6jHtN7r6wiTUtoo_DeKa6u69z6OSIksX"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-xs">
+<h3 class="font-body-md text-body-md text-on-surface font-semibold truncate">Marcus Cole</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">Yesterday</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Thanks again for renting the equipment. It worked perfectly.</p>
+<div class="flex items-center gap-xs mt-1">
+<span class="px-2 py-0.5 rounded-sm bg-surface-variant text-on-surface-variant font-label-md text-[10px]">Completed</span>
+</div>
+</div>
+</button>
+<!-- Chat Item 3 -->
+<button class="chat-item flex items-center gap-md p-sm rounded-xl hover:bg-surface-container-lowest transition-colors text-left">
+<div class="relative flex-shrink-0">
+<div class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-headline-md text-headline-md shadow-sm">
+             EL
+           </div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex justify-between items-baseline mb-xs">
+<h3 class="font-body-md text-body-md text-on-surface font-semibold truncate">Elena Rodriguez</h3>
+<span class="font-label-md text-label-md text-on-surface-variant">Oct 12</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Is the studio available next weekend?</p>
+<div class="flex items-center gap-xs mt-1">
+<span class="px-2 py-0.5 rounded-sm bg-primary-fixed-dim/20 text-primary font-label-md text-[10px]">Inquiry</span>
+</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Individual Chat Screen (Hidden by default, slides in) -->
+<div class="fixed inset-0 z-50 bg-surface translate-x-full transition-transform duration-300 ease-out flex flex-col pt-safe" id="chat-screen">
+<!-- Chat Header -->
+<div class="h-16 px-container-margin flex items-center gap-md bg-[#0A2A6B] text-white shadow-md relative z-20">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors" id="back-btn">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex items-center gap-sm flex-1 min-w-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Professional headshot of a friendly woman in her 30s with short curly hair, smiling warmly. Natural lighting, shallow depth of field. Soft deep navy and terracotta color palette in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYpa0NUou4F4qW032cXUUFJgNnyuMgVXmev-4qUOsEeX8Eb9JYc_YBqHi7gMoHbVdnEynuNk37ofhEAQve-YNCQO6_-2WQJYGxulT17ubmHEyd27evojpl2JEQMyWkbAjEbuT6OlFJutMgtJSXmRBEQYLL95VWYWuESMAdg_6PHOQRFscg56BaC1TTIMlRYzc1g_3pqNJBK3NHU8rZAnULrTMX7O01MaZERMEK3SJhBMY_sdxTVn-m"/>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-md text-body-md font-semibold truncate">Sarah Jenkins</h2>
+<span class="font-label-md text-[10px] text-white/80 flex items-center gap-1">
+<span class="w-1.5 h-1.5 bg-secondary-container rounded-full"></span> Online
+          </span>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+<!-- Pinned Booking Context -->
+<div class="bg-surface-container-low px-container-margin py-sm shadow-[0_2px_15px_rgba(10,42,107,0.08)] relative z-10">
+<div class="flex gap-sm items-center bg-white rounded-lg p-sm shadow-sm relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<img class="w-12 h-12 rounded bg-surface-container object-cover" data-alt="A brightly lit modern photo studio with seamless white backdrop, professional lighting gear, and large windows. Warm inviting tones, corporate modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKINaBl0OQKAwPANZiYqV4BVLH1Ni0Q-Wu6zSZViKzRs0qLZ2ImdR1BJsbyCBukDETrD4_jJDoTWk_DNiHyx1uUrmWijIm094iw2HrduHzKOyxMhWekG9nOsy_kcCo4Epf0ubRB0RHgzG8oF0_GX-yWnRae9aqwIInaX9LEvwsB5sORz6nS4L5dBKEyLCdsIyKCrLjqS116_kJhSO0hKOZzkm4qbPBDPEoXWwOmOdD5FCQQ6-gtikn"/>
+<div class="flex-1 min-w-0">
+<h4 class="font-body-md text-body-sm font-semibold text-on-surface truncate">Downtown Creator Studio</h4>
+<p class="font-label-md text-[11px] text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[12px]">calendar_today</span> Oct 24 • 10:00 AM - 2:00 PM
+          </p>
+</div>
+<button class="px-3 py-1.5 bg-secondary-container/30 text-on-secondary-container rounded-full font-label-md text-[10px] whitespace-nowrap hover:bg-secondary-container/50 transition-colors">
+          View Details
+        </button>
+</div>
+</div>
+<!-- Chat Messages Area -->
+<div class="flex-1 overflow-y-auto px-container-margin py-md flex flex-col gap-sm bg-surface">
+<!-- Date Divider -->
+<div class="flex justify-center my-xs">
+<span class="px-3 py-1 bg-surface-container-high rounded-full font-label-md text-[10px] text-on-surface-variant">Today</span>
+</div>
+<!-- Message Received -->
+<div class="flex flex-col items-start max-w-[85%] self-start">
+<div class="bg-surface-container-low text-on-surface p-sm rounded-2xl rounded-tl-sm shadow-sm font-body-md text-body-sm">
+          Hi! I'm really looking forward to using the studio tomorrow. Quick question - is there a freight elevator available? I have some heavy equipment.
+        </div>
+<span class="font-label-md text-[10px] text-on-surface-variant mt-1 ml-1">10:35 AM</span>
+</div>
+<!-- Message Sent -->
+<div class="flex flex-col items-end max-w-[85%] self-end mt-sm">
+<div class="bg-primary text-on-primary p-sm rounded-2xl rounded-tr-sm shadow-sm font-body-md text-body-sm">
+          Hello Sarah! Yes, there is a freight elevator right next to the main entrance. You can pull your vehicle into the loading bay to unload.
+        </div>
+<div class="flex items-center gap-1 mt-1 mr-1">
+<span class="font-label-md text-[10px] text-on-surface-variant">10:40 AM</span>
+<span class="material-symbols-outlined text-[12px] text-primary" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</div>
+</div>
+<!-- Message Received (The latest unread one) -->
+<div class="flex flex-col items-start max-w-[85%] self-start mt-sm">
+<div class="bg-surface-container-low text-on-surface p-sm rounded-2xl rounded-tl-sm shadow-sm font-body-md text-body-sm relative">
+<div class="absolute -left-2 top-1/2 -translate-y-1/2 w-1 h-1 bg-primary-container rounded-full"></div>
+          Great, that's perfect! I'll leave the keys in the lockbox for you when I'm done.
+        </div>
+<span class="font-label-md text-[10px] text-on-surface-variant mt-1 ml-1">10:42 AM</span>
+</div>
+<!-- Spacer for bottom padding -->
+<div class="h-4"></div>
+</div>
+<!-- Message Input -->
+<div class="p-sm bg-white border-t border-surface-container-high shadow-[0_-4px_20px_rgba(10,42,107,0.05)] pb-safe relative z-20">
+<div class="flex items-end gap-sm bg-surface rounded-xl p-xs shadow-inner">
+<button class="w-10 h-10 flex-shrink-0 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low rounded-full transition-colors mb-0.5">
+<span class="material-symbols-outlined">add_circle</span>
+</button>
+<textarea class="flex-1 bg-transparent border-none focus:outline-none resize-none py-2.5 font-body-md text-body-sm text-on-surface max-h-[100px]" placeholder="Type a message..." rows="1"></textarea>
+<button class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-primary-container text-white rounded-full hover:bg-primary transition-colors shadow-sm mb-0.5">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const chatItems = document.querySelectorAll('.chat-item');
+    const chatScreen = document.getElementById('chat-screen');
+    const backBtn = document.getElementById('back-btn');
+    const textarea = document.querySelector('textarea');
+
+    // Simple auto-resize for textarea
+    if(textarea) {
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    }
+
+    // Navigation logic
+    chatItems.forEach(item => {
+      item.addEventListener('click', () => {
+        // Hide global nav when entering chat
+        const globalNav = document.querySelector('nav');
+        if(globalNav) globalNav.style.transform = 'translateY(100%)';
+        
+        // Slide in chat screen
+        chatScreen.classList.remove('translate-x-full');
+      });
+    });
+
+    backBtn.addEventListener('click', () => {
+      // Slide out chat screen
+      chatScreen.classList.add('translate-x-full');
+      
+      // Restore global nav
+      const globalNav = document.querySelector('nav');
+      if(globalNav) globalNav.style.transform = 'translateY(0)';
+    });
+  });
+</script><div class="h-24"></div></main><nav class="fixed bottom-0 w-full z-50 bg-white/80 backdrop-blur-xl pb-safe shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary-container"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="text-label-md font-label-md">Home</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined">explore</span><span class="text-label-md font-label-md">Explore</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="bookings" href="#"><span class="material-symbols-outlined">calendar_today</span><span class="text-label-md font-label-md">Bookings</span></a><a aria-current="page" class="flex flex-col items-center gap-xs transition-colors text-primary-container" data-path="messages" href="#"><span class="material-symbols-outlined">chat_bubble</span><span class="text-label-md font-label-md">Messages</span></a><a class="flex flex-col items-center gap-xs text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined">account_circle</span><span class="text-label-md font-label-md">Profile</span></a></div></nav></body></html>

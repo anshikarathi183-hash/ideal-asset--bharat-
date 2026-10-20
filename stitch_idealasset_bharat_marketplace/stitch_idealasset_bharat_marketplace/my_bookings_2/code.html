@@ -1,0 +1,171 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#8b7265", "inverse-surface": "#31302e", "primary-container": "#f47920", "surface-dim": "#dcdad6", "surface-container-low": "#f6f3ef", "on-tertiary-fixed": "#002201", "on-error-container": "#93000a", "primary-fixed": "#ffdbc9", "on-background": "#1c1c1a", "on-primary-container": "#572400", "secondary-container": "#81b9ff", "on-secondary-container": "#004980", "secondary-fixed-dim": "#a1c9ff", "on-primary-fixed-variant": "#763300", "tertiary-container": "#5bae4f", "error": "#ba1a1a", "on-primary-fixed": "#321200", "surface-container-highest": "#e5e2de", "on-primary": "#ffffff", "surface-tint": "#9a4600", "surface-variant": "#e5e2de", "secondary-fixed": "#d2e4ff", "on-tertiary": "#ffffff", "tertiary-fixed": "#a0f88e", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-surface": "#1c1c1a", "on-tertiary-fixed-variant": "#005304", "on-secondary-fixed-variant": "#004880", "on-secondary": "#ffffff", "tertiary": "#186d15", "inverse-on-surface": "#f3f0ec", "on-secondary-fixed": "#001c37", "primary-fixed-dim": "#ffb68d", "on-surface-variant": "#574237", "on-tertiary-container": "#003d02", "outline-variant": "#dec0b1", "surface-container": "#f0edea", "background": "#fcf9f5", "surface": "#fcf9f5", "surface-bright": "#fcf9f5", "primary": "#9a4600", "tertiary-fixed-dim": "#85db75", "surface-container-high": "#ebe8e4", "inverse-primary": "#ffb68d", "error-container": "#ffdad6", "secondary": "#1961a1" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "16px", "margin-desktop": "40px", "stack-md": "16px", "stack-sm": "8px", "unit": "8px", "gutter": "24px", "stack-lg": "32px", "container-max-width": "1280px" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] } } } }</script><style>@layer base { .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { -webkit-tap-highlight-color: transparent; overscroll-behavior-y: none; }</style></head><body class="bg-surface text-on-surface font-body-md"><header class="fixed top-0 w-full z-50 bg-[#0A2A6B] pt-safe shadow-[0_4px_20px_rgba(10,42,107,0.1)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-stack-md"><div class="flex items-center gap-stack-sm"><img alt="idealAsset BHARAT" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4IrZ1bqNIue1xISLAoSoymL_RLXLg16pvL9JXM1teAH2YokqW2qAmCXIuCCinu6doL782xGTIvivhMBZrFsLv4ALNzGZealPzonOskiZtNs0qBlQAtyuFRFFHPqvfhsrjJIC1hMFrpIMxas8aIMd-DyQIM7pGJyswsFW1FEoRd6cMiBVO6YccIiqMbEHIPakzvvPS_Ikb_vhEa7Xuzl9m_NAysc778dRedEXh-uaIf5z2QqybZWzm"/></div><div class="flex-1 flex justify-center items-center gap-unit px-stack-md py-unit bg-white/10 rounded-full text-white/90 max-w-[180px]"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="text-label-md font-label-md truncate">Select Location</span></div><div class="flex items-center gap-stack-md"><div class="w-10 h-10 flex items-center justify-center text-white relative"><span class="material-symbols-outlined">notifications</span><div class="absolute top-2.5 right-2.5 w-2 h-2 bg-primary-container rounded-full"></div></div><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center border border-white/20"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div></div></div></header><main class="pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full px-margin-mobile gap-stack-lg pb-stack-lg">
+<!-- Header Section -->
+<div class="flex flex-col gap-stack-sm mt-stack-md">
+<h1 class="text-headline-lg-mobile text-on-surface font-headline-lg-mobile">My Bookings</h1>
+<p class="text-body-md text-on-surface-variant font-body-md">Manage your asset reservations</p>
+</div>
+<!-- Tabs -->
+<div class="flex p-1 bg-surface-container-high rounded-lg gap-1 relative overflow-hidden" role="tablist">
+<div class="absolute inset-y-1 bg-surface rounded shadow-sm transition-all duration-300 ease-out" id="tab-highlight" style="width: calc(33.333% - 8px); left: 4px;"></div>
+<button aria-selected="true" class="flex-1 py-2 text-label-lg font-label-lg text-primary relative z-10 transition-colors duration-300" id="tab-0" onclick="switchTab(0)" role="tab">
+      Upcoming
+    </button>
+<button aria-selected="false" class="flex-1 py-2 text-label-lg font-label-lg text-on-surface-variant relative z-10 transition-colors duration-300" id="tab-1" onclick="switchTab(1)" role="tab">
+      Ongoing
+    </button>
+<button aria-selected="false" class="flex-1 py-2 text-label-lg font-label-lg text-on-surface-variant relative z-10 transition-colors duration-300" id="tab-2" onclick="switchTab(2)" role="tab">
+      Completed
+    </button>
+</div>
+<!-- Content Panels -->
+<div class="relative min-h-[400px]">
+<!-- Upcoming Tab Panel -->
+<div aria-labelledby="tab-0" class="absolute w-full top-0 left-0 transition-all duration-300 opacity-100 translate-y-0" id="panel-0" role="tabpanel">
+<div class="flex flex-col gap-stack-md">
+<!-- Booking Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-4 border border-outline-variant/30 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full -mr-4 -mt-4"></div>
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A modern, well-lit community hall interior with rows of chairs and a small stage. Bright overhead lighting. Empty, ready for an event." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbirIig5B1Th9R_p_GRV49a9gCV81GTgDY-OzZ-X1iP45UEIMIOofsA1eiHbEYZPba6uemCrCApyUxCteN0NS74CRwMosNnT08uDVBZ4MRciWnpurTIQs3QcPciCFE1TBoDalvGeYeMnT-jiV6FhfLCciz6ar0J0CZucGv1Mr3sVG0K48Bym1U6qFPIer2jG7Oy5P8VClDBHxAXZH8YT3qVG_Iz6hlCPQ0lhSoWIE5pa3vFxt6hM00"/>
+</div>
+<div class="flex flex-col flex-1 justify-center gap-1">
+<div class="flex justify-between items-start">
+<span class="inline-flex px-2 py-0.5 bg-primary-container/20 text-on-primary-container text-[10px] font-label-md rounded-full uppercase tracking-wider">Confirmed</span>
+<span class="text-label-md text-on-surface-variant">#BK-8472</span>
+</div>
+<h3 class="text-headline-sm text-on-surface font-headline-sm line-clamp-1">Community Hall A</h3>
+<p class="text-body-sm text-on-surface-variant font-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                Downtown District
+              </p>
+</div>
+</div>
+<div class="h-[1px] bg-outline-variant/30 w-full"></div>
+<div class="flex justify-between items-center bg-surface-container-low p-3 rounded-lg">
+<div class="flex flex-col gap-0.5">
+<span class="text-[11px] text-on-surface-variant font-label-md uppercase tracking-wider">Date</span>
+<span class="text-body-sm text-on-surface font-headline-sm">Oct 24, 2023</span>
+</div>
+<div class="w-[1px] h-8 bg-outline-variant/30"></div>
+<div class="flex flex-col gap-0.5">
+<span class="text-[11px] text-on-surface-variant font-label-md uppercase tracking-wider">Time</span>
+<span class="text-body-sm text-on-surface font-headline-sm">09:00 - 14:00</span>
+</div>
+</div>
+<div class="flex gap-3 mt-2">
+<button class="flex-1 py-2.5 rounded-lg border border-primary text-primary font-label-lg text-label-lg hover:bg-primary/5 transition-colors">Modify</button>
+<button class="flex-1 py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:shadow-md transition-shadow flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">directions</span> Get Directions
+            </button>
+</div>
+</div>
+<!-- Booking Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-4 border border-outline-variant/30 relative overflow-hidden">
+<div class="flex gap-4">
+<div class="w-20 h-20 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="A heavy-duty yellow construction excavator parked on a dirt lot, clear blue sky background. Industrial equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Mo1ydGC7GplRuaiHgIP2wh2h1-eT-WXcVrygOkJhPOlrHuYjOLSOwb1aHL0j8Ce_zNbo4lMnIV-7oEoXJnDuUNDnzoBAHAYnFYmTcW58EDnvdc42PrdCNeghQFXrH3kMYW6X3kdFfhuNp3oRmjtTkMpw-oJmrv7sZ-CfvRWvxUAUlHK00esBhtxt7RvHu0Xz5xnRGoI7mX1488uj4rYjMOIdiXIi9GNeKE6zOhGIkp1FKi1XJ8Y4"/>
+</div>
+<div class="flex flex-col flex-1 justify-center gap-1">
+<div class="flex justify-between items-start">
+<span class="inline-flex px-2 py-0.5 bg-secondary-container/30 text-on-secondary-container text-[10px] font-label-md rounded-full uppercase tracking-wider">Pending Payment</span>
+<span class="text-label-md text-on-surface-variant">#BK-8499</span>
+</div>
+<h3 class="text-headline-sm text-on-surface font-headline-sm line-clamp-1">Excavator CX-500</h3>
+<p class="text-body-sm text-on-surface-variant font-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">business</span>
+                Public Works Dept
+              </p>
+</div>
+</div>
+<div class="h-[1px] bg-outline-variant/30 w-full"></div>
+<div class="flex justify-between items-center bg-surface-container-low p-3 rounded-lg">
+<div class="flex flex-col gap-0.5">
+<span class="text-[11px] text-on-surface-variant font-label-md uppercase tracking-wider">Dates</span>
+<span class="text-body-sm text-on-surface font-headline-sm">Nov 02 - Nov 05</span>
+</div>
+<div class="w-[1px] h-8 bg-outline-variant/30"></div>
+<div class="flex flex-col gap-0.5 items-end">
+<span class="text-[11px] text-on-surface-variant font-label-md uppercase tracking-wider">Total Due</span>
+<span class="text-body-sm text-on-surface font-headline-sm">₹45,000</span>
+</div>
+</div>
+<div class="flex mt-2">
+<button class="w-full py-3 rounded-lg bg-secondary text-on-secondary font-label-lg text-label-lg shadow-sm hover:shadow-md transition-shadow flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">payment</span> Pay Now
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Ongoing Tab Panel -->
+<div aria-labelledby="tab-1" class="absolute w-full top-0 left-0 transition-all duration-300 opacity-0 pointer-events-none translate-y-4" id="panel-1" role="tabpanel">
+<!-- Empty State for Ongoing -->
+<div class="flex flex-col items-center justify-center py-12 px-6 text-center bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-sm">
+<div class="w-24 h-24 bg-surface-container rounded-full flex items-center justify-center mb-6 relative">
+<span class="material-symbols-outlined text-[48px] text-primary opacity-50">hourglass_empty</span>
+<div class="absolute inset-0 rounded-full border-2 border-primary border-dashed animate-[spin_10s_linear_infinite] opacity-20"></div>
+</div>
+<h3 class="text-headline-sm text-on-surface font-headline-sm mb-2">No Ongoing Bookings</h3>
+<p class="text-body-md text-on-surface-variant font-body-md max-w-[250px]">You don't have any active asset reservations at the moment.</p>
+<button class="mt-8 px-6 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-sm">Explore Assets</button>
+</div>
+</div>
+<!-- Completed Tab Panel -->
+<div aria-labelledby="tab-2" class="absolute w-full top-0 left-0 transition-all duration-300 opacity-0 pointer-events-none translate-y-4" id="panel-2" role="tabpanel">
+<div class="flex flex-col gap-stack-md">
+<!-- Completed Booking Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3 border border-outline-variant/30 opacity-75 hover:opacity-100 transition-opacity">
+<div class="flex justify-between items-center mb-1">
+<span class="inline-flex px-2 py-0.5 bg-tertiary-container/30 text-on-tertiary-container text-[10px] font-label-md rounded-full uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Completed
+             </span>
+<span class="text-label-md text-on-surface-variant">#BK-7120</span>
+</div>
+<div class="flex gap-4">
+<div class="w-16 h-16 rounded-lg bg-surface-container overflow-hidden shrink-0 grayscale">
+<img class="w-full h-full object-cover" data-alt="A small white delivery van parked on a residential street. Clean and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo96Et2HW8gGpzZn-KsJ-89jzcGplHepEKtKBhOILhmDTIQb-pBnplvRCNKQp6QgU_0mA9RVhaXpkgO-if_oB9vGc8GdKaT0uw9M-pZ-vRy1Kkau-5xMAVXjhA4Pn1sxQLd4pjfluN5zCyCLnoETNTG4_dZT1sfi0uF4sOKaLM40aa--RTyXD6BJ46PJHsRKNYlwvmLo3cmqVDLDLp3XZml1SAFodw8L-eDmDrXPlbVxoLJ_C3Ap7M"/>
+</div>
+<div class="flex flex-col justify-center gap-1">
+<h3 class="text-headline-sm text-on-surface font-headline-sm line-clamp-1">Cargo Van (Medium)</h3>
+<p class="text-body-sm text-on-surface-variant font-body-sm">Sep 15 - Sep 16, 2023</p>
+</div>
+</div>
+<button class="w-full mt-2 py-2 rounded-lg border border-outline-variant text-on-surface font-label-lg text-label-lg hover:bg-surface-container-low transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span> Download Invoice
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function switchTab(index) {
+    // Update highlight position
+    const highlight = document.getElementById('tab-highlight');
+    highlight.style.left = `calc(${index * 33.333}% + 4px)`;
+    
+    // Update tab styles
+    for (let i = 0; i < 3; i++) {
+      const tab = document.getElementById(`tab-${i}`);
+      const panel = document.getElementById(`panel-${i}`);
+      
+      if (i === index) {
+        tab.classList.remove('text-on-surface-variant');
+        tab.classList.add('text-primary');
+        tab.setAttribute('aria-selected', 'true');
+        
+        panel.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        panel.classList.add('opacity-100', 'translate-y-0');
+      } else {
+        tab.classList.add('text-on-surface-variant');
+        tab.classList.remove('text-primary');
+        tab.setAttribute('aria-selected', 'false');
+        
+        panel.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+        panel.classList.remove('opacity-100', 'translate-y-0');
+      }
+    }
+  }
+</script><div class="h-24"></div></main><nav class="fixed bottom-0 w-full z-50 bg-white/90 backdrop-blur-xl pb-safe shadow-[0_-4px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-gutter"><a class="flex flex-col items-center gap-stack-sm text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="text-label-md font-label-md">Home</span></a><a class="flex flex-col items-center gap-stack-sm text-on-surface-variant transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined">explore</span><span class="text-label-md font-label-md">Explore</span></a><a aria-current="page" class="flex flex-col items-center gap-stack-sm transition-colors text-primary" data-path="bookings" href="#"><span class="material-symbols-outlined">calendar_today</span><span class="text-label-md font-label-md">Bookings</span></a><a class="flex flex-col items-center gap-stack-sm text-on-surface-variant transition-colors" data-path="messages" href="#"><span class="material-symbols-outlined">chat_bubble</span><span class="text-label-md font-label-md">Messages</span></a><a class="flex flex-col items-center gap-stack-sm text-on-surface-variant transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined">account_circle</span><span class="text-label-md font-label-md">Profile</span></a></div></nav></body></html>
